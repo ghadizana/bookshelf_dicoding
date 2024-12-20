@@ -121,10 +121,6 @@ function makeBook(bookObject) {
       undoBookFromCompleted(id);
     });
 
-    undoButton.addEventListener("click", function () {
-      undoBookFromCompleted(id);
-    });
-
     const trashButton = document.createElement("button");
     trashButton.classList.add("trash-button");
     trashButton.setAttribute("data-testid", "bookItemDeleteButton")
